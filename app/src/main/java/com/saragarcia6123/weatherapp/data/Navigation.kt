@@ -1,6 +1,11 @@
 package com.saragarcia6123.weatherapp.data
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -14,6 +19,24 @@ import com.saragarcia6123.weatherapp.ui.Screen
 fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Screen.HomeScreen.route) {
-        composable(route = Screen.HomeScreen.route) {}
+        composable(route = Screen.HomeScreen.route) {
+
+        }
+        composable(route = Screen.MapScreen.route + "/map") {
+
+        }
+        composable(route = Screen.InfoScreen.route + "/info") {
+
+        }
     }
+}
+
+@Composable
+fun MainScreen(navController: NavController) {
+
+}
+
+@Composable
+fun InfoScreen(navController: NavController) {
+
 }
