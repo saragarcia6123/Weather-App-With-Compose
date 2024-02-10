@@ -69,7 +69,7 @@ private fun SolidCard(content: @Composable () -> Unit, backgroundColor: Color, c
 }
 
 @Composable
-private fun BoxShadow(painter: Painter, contentDescription: String, boxHeight: Int, shadowBrush: Brush) {
+fun BoxShadow(painter: Painter, contentDescription: String, boxHeight: Int, shadowBrush: Brush) {
     Box(
         modifier = Modifier
             .fillMaxSize()

@@ -1,14 +1,12 @@
 package com.saragarcia6123.weatherapp.data
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.saragarcia6123.weatherapp.screens.HomeScreen
+import com.saragarcia6123.weatherapp.screens.MapScreen
+import com.saragarcia6123.weatherapp.screens.SearchScreen
 import com.saragarcia6123.weatherapp.ui.Screen
 
 //Each screen is its own composable
@@ -17,26 +15,22 @@ import com.saragarcia6123.weatherapp.ui.Screen
 
 @Composable
 fun Navigation() {
+    
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Screen.HomeScreen.route) {
-        composable(route = Screen.HomeScreen.route) {
-
+    
+    NavHost(navController = navController, startDestination = Screen.Home.route) {
+        composable(Screen.Home.route) {
+            HomeScreen()
         }
-        composable(route = Screen.MapScreen.route + "/map") {
-
+        composable(
+            route = Screen.Map.route + "/map"
+        ) {
+            MapScreen()
         }
-        composable(route = Screen.InfoScreen.route + "/info") {
-
+        composable(
+            route = Screen.Search.route + "/search"
+        ) {
+            SearchScreen()
         }
     }
-}
-
-@Composable
-fun MainScreen(navController: NavController) {
-
-}
-
-@Composable
-fun InfoScreen(navController: NavController) {
-
 }
