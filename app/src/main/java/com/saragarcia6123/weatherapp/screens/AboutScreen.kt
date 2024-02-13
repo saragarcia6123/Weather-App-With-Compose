@@ -7,8 +7,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen(navController: NavHostController, modifier: Modifier = Modifier) {
+fun AboutScreen(navController: NavHostController, modifier: Modifier = Modifier) {
     Column {
-        Text(text = "Settings")
+        Text(text = "About")
     }
 }

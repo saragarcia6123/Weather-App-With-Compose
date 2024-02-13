@@ -1,10 +1,7 @@
 package com.saragarcia6123.weatherapp.data
 
-import android.graphics.drawable.VectorDrawable
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import com.example.weatherappwithcompose.R
 

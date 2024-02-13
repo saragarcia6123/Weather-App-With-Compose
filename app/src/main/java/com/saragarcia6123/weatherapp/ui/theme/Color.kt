@@ -7,4 +7,4 @@ val Secondary = Color(0xFF7197B9)
 val Accent = Color(0xFFF8BA70)
 
 val PrimaryDark = Color(0xFF2B4777)
-val SecondaryDark = Color(0xFF121B35)
+val SecondaryDark = Color(0xFF192B5E)
